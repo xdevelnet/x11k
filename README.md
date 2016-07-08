@@ -17,6 +17,9 @@ Now you have x11k binary and ready to use it. You may wish to move it into some 
 
 # Usage
 1) ``x11k -m background -a /path/to/log/file``
+
 2) ``x11k -m foreground``
+
 3) ``x11k status``
+
 4) ``x11k stop``
