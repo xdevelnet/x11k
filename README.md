@@ -1,2 +1,2 @@
 # x11k
-Keylogger for POSIX systems (linux, freebsd) with X11
+Keylogger UNIX-like systems like linux/freebsd with Xorg (or x11 compatiable) graphics server. Allows you to log your keyboard actions.
