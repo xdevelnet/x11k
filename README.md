@@ -15,7 +15,7 @@ make
 ```
 Now you have x11k binary and ready to use it. You may wish to move it into some $PATH dirs.
 
-# Usage
+# Usage cases
 1) ``x11k -m background -a /path/to/log/file``
 
 2) ``x11k -m foreground``
