@@ -6,16 +6,12 @@ Keylogger logs key actions from Xorg display. Please note, that using this progr
 
 # How to install it?
 
-1) Install git and x11 development library.
+1) Install x11 development library.
 For Ubuntu and derivatives:
 ```
-sudo apt-get install git libx11-dev
+sudo apt-get install libx11-dev
 ```
-2) Download repository to your machine and cd to working directory:
-```
-git clone https://github.com/xdevelnet/x11k.git
-cd x11k
-```
+2) Download latest release from [releases page](https://github.com/xdevelnet/x11k/releases), extract it, and cd to working directory
 3) Build:
 ```
 make
