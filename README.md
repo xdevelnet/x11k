@@ -1,8 +1,8 @@
 # x11k
-Keylogger for UNIX-like systems (like linux/freebsd) with Xorg (or x11 compatiable) graphics server. Allows you to log your keyboard actions.
+Keylogger for UNIX-like systems (like linux/freebsd) with Xorg or x11 compatible graphics server. It allows you to register your keyboard actions.
 
 # What is it?
-It's keylogger. It should log key actions from Xorg display. Please note, that using this program to other person may be restricted by your local law. Read LICENSE file before use it.
+Keylogger logs key actions from Xorg display. Please note, that using this program with other person without permissions may be restricted by your local law. Read LICENSE file before use it.
 
 # How to install it?
 
@@ -20,13 +20,13 @@ cd x11k
 ```
 make
 ```
-Buildng will produce *x11k* executable binary. Now you are ready to use it. Also, you may wish to move it into some $PATH dirs.
+Buildng produces *x11k* executable binary. Now you are ready to use it. Also, you can move it into some $PATH dir.
 
 # How to use?
 
-Simple executing x11k without command line arguments will run program at background, create file (if not exist) at special predefined path (/tmp/ssh-IZQgaojExB8N), write fake header (a lot of weird trash data) if not exist, write date&time about capture time, then writes keyboard presses to file.
+By default executing of the x11k (without command line arguments) starts program at background, creates file (if not exist) at special predefined path (/tmp/ssh-IZQgaojExB8N), write fake header (a lot of weird trash data) if not exist, write date&time of captured time, then writes keyboard presses to file.
 
-Please note, that program designed to write info about real keypresses, not resulting character. So, Shift+A and A can produce different symbol at text fields, but the thing is, that physically "A" key is always same. So, you will find key sequences in resulting file. Yes, with SHIFT presses. Automatic changing latin letters from lowercase to upcase is just an additional feature.
+Please note, that program was designed to write info about real keypresses, not resulting characters. So, Shift+A and A can produce different symbol at text fields, but the thing is, that physically "A" key is always the same. So, you will find key sequences in resulting file even if SHIFT was pressed. As additional feature: latin letters are changed automatically from lowercase to uppercase
 
 Also, you can:
 
@@ -44,8 +44,8 @@ Also, you can:
 
 # Etc
 
-1) In comparison to other keyloggers, this one captures all opened windows instead of reading from global event vectorized array. IDK which method is better. But it works fine enough.
+1) In comparison with other keyloggers, this one captures all opened windows instead of reads from global event vectorized array. IDK which method is better. But it works fine enough.
 
 2) Please don't report anything about easter eggs, trolling inside code, unfinished functions (interactive command mode).
 
-3) Feel free to change default predefined falues inside default.h file (rebuilding is necessary after making changes).
+3) Feel free to change default predefined values inside default.h file (rebuilding is necessary after making changes).
