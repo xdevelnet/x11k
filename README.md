@@ -1,6 +1,8 @@
 # x11k
 Keylogger for UNIX-like systems (like linux/freebsd) with Xorg or x11 compatible graphics server. It allows you to register your keyboard actions.
 
+[![Build Status](https://travis-ci.org/xdevelnet/x11k.svg?branch=master)](https://travis-ci.org/xdevelnet/x11k)
+
 # What is it?
 Keylogger logs key actions from Xorg display. Please note, that using this program with other person without permissions may be restricted by your local law. Read LICENSE file before use it.
 
