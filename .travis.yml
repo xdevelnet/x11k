@@ -1,4 +1,4 @@
 language: c
 before_install:
   - sudo apt-get -qq update
-    - sudo apt-get install -y libx11-dev make
+  - sudo apt-get install -y libx11-dev make
