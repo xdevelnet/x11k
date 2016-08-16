@@ -91,7 +91,7 @@ void check_rc_d_commands(char *command, int *mode) { // This shit may be rewritt
 			fprintf(stderr, "Program is not running.\n");
 		}
 		exit(EXIT_SUCCESS);
-	} else																																																										if (strcmp(command, "yoba") == 0) printf(yoba); else
+	} else																																																										if (strcmp(command, "yoba") == 0) printf("%s", yoba); else
 	if (strcmp(command, "start") == 0) *mode = MODE_BACKGROUND; else
 	if (strcmp(command, "stop") == 0) { // YAY! COPYPASTING AGAIN! I LOVE MYSELF (NO)
 		if ((shmid = check_if_shmem_not_exist()) >= 0) {
